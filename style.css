@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-bar{
+    display: flex;
+    padding: 10px 60px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff;
+}
+
+.login-options{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-options a{
+    text-decoration: none;
+    color: #253D4E;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero-section{
+    background-image: url("hero-image.svg");
+    background-size: cover;
+    background-position: center;
+    width: 80vw;
+    height: 350px;
+    margin: auto;
+    margin-top: 35px !important;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.p1{
+    color: #DC582A;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.hero-content > h1 {
+    color: #ffffff;
+}
+
+.p2{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+}
+.search-div{
+    width: 80vw;
+    margin: auto;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+}
+.search-div > p{
+    color: #252525;
+    font-weight: 600;
+    font-size: 22px;
+}
+.search-div > div {
+    background-color: #F3F3F3;
+    display: flex;
+    align-items: center;
+}
+.search-div > div > input{
+    /* border: none; */
+    height: 30px;
+    flex-grow: 1;
+}
+.search-div > div img{
+    height: 30px;
+}
+.recipies-section{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+.recipies-section > button{
+    padding: 20px 30px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+}
+.recipies-section > button i{
+    margin-left: 20px;
+}
+#all-recipes{
+    background-color: #EAAA00 !important;
+}
+#veg-recipes{
+    background-color: #C4D600;
+}
+#nonveg-recipies{
+    background-color: #DC582A;
+}
+footer{
+    display: flex;
+    width: 85vw;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    gap: 20px;
+    justify-content: space-between;
+    
+}
+.info{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #253D4E;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.table{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 3;
+}
+.table-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.table-1 p a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+}
+.table-1 h5{
+    font-weight: 600px;
+    font-size: 20px;
+    color: #253D4E;
+}
+.subscribe{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.subscribe div button{
+    padding: 10px;
+    background-color: #509E2F;
+    border: none;
+    border-radius: 10px;
+    color: #FCFAFF;
+}
+.subscribe div input{
+    padding: 10px;
+    border-radius: 10px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+.social p {
+    padding: 8px;
+    background-color: #2A3342;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.filter-head{
+    font-weight: 600;
+    font-size: 22px;
+    color: #252525;
+    margin-bottom: 40px;
+}
+.filter-subhead{
+    font-weight: 500;
+    font-size: 18px;
+    color: #252525;
+    margin-bottom: 20px;
+}
+.main-section{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 50px !important;
+}
+.filter{
+    flex: 1;
+}
+.hide, .rating-hide{
+    display: none !important;
+}
+.add-border{
+    border: 5px solid blue !important;
+}
+
+@media screen and (max-width: 676px){
+    .main-section{
+        flex-direction: column;
+    }
+    .recipies-section{
+        flex-direction: column;
+        width: 50vw;
+    }
+    footer{
+        flex-direction: column;
+    }
+    
+}
